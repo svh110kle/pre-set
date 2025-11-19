@@ -1,0 +1,56 @@
+.top-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.top-header .eyebrow {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--text-muted);
+  font-size: 0.7rem;
+}
+
+.top-header h2 {
+  margin: 0.25rem 0 0;
+  font-size: 1.6rem;
+}
+
+.profile-chip {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.4rem 0.9rem;
+}
+
+.profile-chip small {
+  color: var(--text-muted);
+}
+
+.profile-chip .avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: var(--primary);
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  color: #050617;
+}
+
+@media (max-width: 720px) {
+  .top-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .profile-chip {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+

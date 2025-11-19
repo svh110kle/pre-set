@@ -1,0 +1,61 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.stat-tile {
+  min-height: 120px;
+}
+
+.stat-tile small {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--text-muted);
+}
+
+.stat-tile strong {
+  font-size: 1.8rem;
+  display: block;
+  margin-top: 0.4rem;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+}
+
+.edit-panel textarea {
+  min-height: 140px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.02);
+  color: inherit;
+  padding: 0.8rem;
+}
+
+.edit-panel textarea:focus {
+  border-color: var(--primary);
+  outline: none;
+}
+
+.preferences-panel ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.success-note {
+  color: #7cffa6;
+}
+

@@ -1,0 +1,27 @@
+.auth-layout {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  padding: 4rem clamp(1rem, 5vw, 5rem);
+}
+
+.auth-hero {
+  background: linear-gradient(160deg, rgba(124, 93, 255, 0.35), transparent);
+  border-radius: 2rem;
+  padding: 2rem;
+  border: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.auth-hero h1 {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+}
+
+.auth-hero p {
+  color: var(--text-muted);
+  max-width: 320px;
+}
+

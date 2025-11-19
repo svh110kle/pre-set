@@ -1,0 +1,28 @@
+.chat-bubble {
+  max-width: 70%;
+  padding: 0.85rem 1rem;
+  border-radius: 18px;
+  margin-bottom: 0.6rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.chat-bubble.user {
+  margin-left: auto;
+  background: var(--primary);
+  color: #050617;
+}
+
+.chat-bubble.assistant {
+  margin-right: auto;
+}
+
+.chat-bubble small {
+  display: block;
+  margin-top: 0.35rem;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--text-muted);
+}
+
